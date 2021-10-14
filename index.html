@@ -33,29 +33,6 @@
 </style>
 </head>
   <body class="land-see">
-    <amp-animation id="backgroundAnimation" layout="nodisplay">
-      <script type="application/json">
-        {
-          "duration": "1s",
-          "fill": "both",
-          "direction": "alternate",
-          "animations": [
-            {
-              "selector": ".land-see-background-image-left",
-              "keyframes": [
-                { "transform": "translateY(calc(height('.land-see-subscribe') * -1.2))" }
-              ]
-            },
-            {
-              "selector": ".land-see-background-image-right",
-              "keyframes": [
-                { "transform": "translateY(calc(height('.land-see-subscribe') * 1.2))" }
-              ]
-            }
-          ]
-        }
-      </script>
-    </amp-animation>
     <amp-animation id="recentAccentAnimation" layout="nodisplay">
       <script type="application/json">
         {
@@ -248,53 +225,56 @@
       </div>
     </section>
     <section class="land-see-recent-content relative mx-auto py4">
-      <h4 class="land-see-section-header ml1">Recent Stories</h4>
+      <h4 class="land-see-section-header ml1">What We place offers</h4>
       <div class="clearfix pt2">
         <amp-position-observer on="enter:recentSlideIn.start" layout="nodisplay">
         </amp-position-observer>
         <ul class="list-reset m0 p0 center justify-center fit">
           <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <a href="kim-myeong.amp.html" class="text-decoration-none">
-                <amp-img class="land-see-post-image cover" alt="Studio Serif, interior." media="" width="409" height="305" layout="responsive" src="img/content/studio-310px.jpg">
-                </amp-img>
-            </a>
-            <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="stories.amp.html?category&#x3D;design#land-see-design">Design</a>
-            <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">Office Tour: Studio Serif</a></h4>
-            <p class="ampstart-caption pt1 pb3">In the heart of the southeast, Studio Serif stands out among its competitors for its complex mixture of hand-drawn and computer-generated art coming together in beautifully, cohesive designs.</p>
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Scenic views</h4>
+            <p class="ampstart-caption pt1 pb3">Courtyard view, Garden view, Valley view</p>
           </li>
           <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <a href="kim-myeong.amp.html" class="text-decoration-none">
-                <amp-img class="land-see-post-image cover" alt="Build a killer outfit." media="" width="409" height="370" layout="responsive" src="img/content/retail-shop-370px.jpg">
-                </amp-img>
-            </a>
-            <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="stories.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-            <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">New Textile &amp; Basics Shop Opens in Soho</a></h4>
-            <p class="ampstart-caption pt1 pb3">Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit.</p>
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Bathroom</h4>
+            <p class="ampstart-caption pt1 pb3">Cleaning products, Hot water</p>
           </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent">
-            <a href="kim-myeong.amp.html" class="text-decoration-none">
-                <amp-img class="land-see-post-image cover" alt="Feel the sand on your feet, not your wardrobe weight." media="" width="409" height="370" layout="responsive" src="img/content/travel-accessories-outfits-2-400px.jpg">
-                </amp-img>
-            </a>
-            <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="stories.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-            <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">How to Pack Light When Traveling</a></h4>
-            <p class="ampstart-caption pt1 pb3">Whether it’s a short weekend getaway or an extended holiday, choosing carefully from your accessories can help lighten your load while expanding your repertory.</p>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Bedroom and laundry</h4>
+            <p class="ampstart-caption pt1 pb3">Essentials (Towels, bed sheets, soap, and toilet paper), Hangers, Bed linens, Extra pillows and blankets, Room-darkening shades, Iron, Drying rack for clothing, Clothing storage: wardrobe</p>
           </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent">
-            <a href="kim-myeong.amp.html" class="text-decoration-none">
-                <amp-img class="land-see-post-image cover" alt="Epression of aesthetics." media="" width="409" height="305" layout="responsive" src="img/content/timeless-design-350px.jpg">
-                </amp-img>
-            </a>
-            <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="stories.amp.html?category&#x3D;design#land-see-design">Design</a>
-            <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">Timeless Design: A History of Watches</a></h4>
-            <p class="ampstart-caption pt1 pb3">A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress.</p>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Entertainment</h4>
+            <p class="ampstart-caption pt1 pb3">TV with standard cable.</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Family</h4>
+            <p class="ampstart-caption pt1 pb3">Window guards</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Internet and office</h4>
+            <p class="ampstart-caption pt1 pb3">Wifi (Available throughout the listing),Dedicated workspace: office chair and desk, Pocket wifi.</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Kitchen and dining</h4>
+            <p class="ampstart-caption pt1 pb3">Space where guests can cook their own meals, Refrigerator, Cooking basics(Pots and pans, oil, salt and pepper), Dishes and silverware(Bowls, chopsticks, plates, cups, etc.), Mini fridge, Freezer, Stove, Hot water kettle.</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Location features</h4>
+            <p class="ampstart-caption pt1 pb3">Private entrance (Separate street or building entrance)</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Outdoor</h4>
+            <p class="ampstart-caption pt1 pb3">Private patio or balcony, Private backyard – Fully fenced (An open space on the property usually covered in grass).</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Parking and facilities</h4>
+            <p class="ampstart-caption pt1 pb3">Free parking on premises</p>
+          </li>
+          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
+            <h4 class="land-see-post-title ampstart-title-sm pt1">Services</h4>
+            <p class="ampstart-caption pt1 pb3">Luggage dropoff allowed(For guests' convenience when they have early arrival or late departure), Long term stays allowed (Allow stay for 28 days or more).</p>
           </li>
         </ul>
-        <div class="absolute z4 xs-hide sm-hide land-see-recent-accent-image">
-          <amp-position-observer on="scroll:recentAccentAnimation.seekTo(percent=event.percent)" layout="nodisplay">
-          </amp-position-observer>
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="35" viewBox="0 0 44 35" overflow="visible"><path fill="#3D6458" d="M43.535 34.74H0L21.767 0z"></path></svg>
-        </div>
       </div>
     </section>
     <section class="land-see-recent-content relative mx-auto py4">
