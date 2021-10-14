@@ -27,25 +27,6 @@
 </style>
 </head>
   <body class="land-see">
-    <amp-animation id="popularSlideIn" layout="nodisplay">
-      <script type="application/json">
-        {
-          "duration": ".4s",
-          "easing": "ease-in",
-          "fill": "both",
-          "direction": "alternate",
-          "animations": [
-            {
-              "selector": ".land-see-popular",
-              "delay": "calc(100ms * index())",
-              "keyframes": [
-                {"transform": "translateY(0)", "opacity": 1}
-              ]
-            }
-          ]
-        }
-      </script>
-    </amp-animation>
     <amp-animation id="backgroundAnimation" layout="nodisplay">
       <script type="application/json">
         {
@@ -141,7 +122,6 @@
         }
       </script>
     </amp-animation>
-
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
     <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger md-hide lg-hide pr2  ">☰
@@ -155,21 +135,6 @@
           <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Contact</a></li>
       </ul>
     </nav>
-    <!--
-      TODO: currently "fixeditems" is an array, therefore it's not possible to
-      add additional classes to it. An alternative solution would be to make it
-      an oject, with a "classes" and "items" sub-properties:
-     "fixeditems": {
-       "classes": "col-3",
-       "items": [{
-         "link": {
-           "url": "mailto:contact@lune.com",
-           "text": "—contact@lune.com",
-           "classes": "xs-small sm-hide h6 bold"
-         }
-       }]
-     }
-     -->
     <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap ">
       <div class="mr2">
       </div>
@@ -180,7 +145,6 @@
 
     </div>
   </header>
-
 <!-- Start Sidebar -->
 <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3  md-hide lg-hide " layout="nodisplay">
   <div class="flex justify-start items-center ampstart-sidebar-header">
@@ -192,9 +156,6 @@
           <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">Contact</a></li>
     </ul>
   </nav>
-
-
-
 <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
     <li>
         <a href="#" target="_blank" class="inline-block p1" aria-label="Link to AMP HTML Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewBox="0 0 53 49"><title>Twitter</title><path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path></svg></a>
@@ -216,41 +177,6 @@
 <!-- End Sidebar -->
   <!-- End Navbar -->
     <section class="land-see-hero-container mx-auto mb3 relative overflow-hidden">
-      <div class="land-see-hero-left absolute">
-        <amp-carousel id="land-see-hero-left" class="land-see-hero-carousel mx-auto" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="img/content/pineapple-desk-and-chair.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <h1 class="land-see-hero-title ampstart-title-md">Bedroom</h1>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-bottom" alt="Bedroom" width="1290" height="680" layout="responsive" src="img/content/pineapple-living-room.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="stories.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Bedroom</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Relatively new to the industry, footwear Bedroom uses a unique<br>mix of color, texture, and material to make her shoes the must-haves of this year.
-              </p>
-              <a class="land-see-hero-button text-decoration-none relative" href="kim-myeong.amp.html">Read More</a>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Skykomish River Valley " width="1290" height="680" layout="responsive" src="img/content/pineapple-bedroom.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="stories.amp.html?category&#x3D;design#land-see-design">Design</a>
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Nature's Inspiration</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br>sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-              </p>
-              <a class="land-see-hero-button text-decoration-none relative" href="kim-myeong.amp.html">Read More</a>
-            </div>
-          </div>
-        </amp-carousel>
-      </div>
       <div class="land-see-hero-main mx-auto">
         <amp-carousel id="land-see-hero-main" class="land-see-hero-carousel mx-auto" media="(min-width: 40.06rem)" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
           <div class="land-see-hero-content mx-auto relative">
@@ -282,90 +208,6 @@
             </amp-img>
             <div class="land-see-hero-typography mx-auto center z2 absolute">
               <h1 class="land-see-hero-title ampstart-title-md">Bedroom</h1>
-            </div>
-          </div>
-        </amp-carousel>
-      </div>
-      <div class="land-see-hero-main mx-auto">
-        <amp-carousel id="land-see-hero-main-small" class="land-see-hero-carousel mx-auto" media="(max-width: 40rem)" width="auto" height="570" layout="fixed-height" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bedroom" width="auto" height="278" layout="fixed-height" src="img/content/shoe-designer-centered.jpg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 ">
-              <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="stories.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Designer<br>Kim Myeong</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Relatively new to the industry, footwear Bedroom uses a unique mix of color, texture, and material to make her shoes the must-haves of this year.
-              </p>
-              <a class="land-see-hero-button text-decoration-none relative" href="kim-myeong.amp.html">Read More</a>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image" alt="Skykomish River Valley " width="auto" height="278" layout="fixed-height" src="img/content/pineapple-bedroom.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 ">
-              <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="stories.amp.html?category&#x3D;design#land-see-design">Design</a>
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Nature's Inspiration</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-              </p>
-              <a class="land-see-hero-button text-decoration-none relative" href="kim-myeong.amp.html">Read More</a>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="auto" height="278" layout="fixed-height" src="img/content/pineapple-desk-and-chair.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 ">
-              <h1 class="land-see-hero-title ampstart-title-md">Bedroom</h1>
-            </div>
-          </div>
-        </amp-carousel>
-        <div class="land-see-hero-progress mt2 center">
-          <button on="tap:AMP.setState({selectedSlide: 0})" class="px0">
-            <amp-img [class]="selectedSlide &#x3D;&#x3D; 0 ? &#39;land-see-progress-indicator land-see-selected-slide&#39; : &#39;land-see-progress-indicator&#39;" class="land-see-progress-indicator land-see-selected-slide" alt="Go to slide 1" width="7" height="7" layout="fixed" src="img/structure/carousel-progress-indicator.svg">
-            </amp-img>
-          </button>
-          <button on="tap:AMP.setState({selectedSlide: 1})" class="px1">
-            <amp-img [class]="selectedSlide &#x3D;&#x3D; 1 ? &#39;land-see-progress-indicator land-see-selected-slide&#39; : &#39;land-see-progress-indicator&#39;" class="land-see-progress-indicator" alt="Go to slide 2" width="7" height="7" layout="fixed" src="img/structure/carousel-progress-indicator.svg">
-            </amp-img>
-          </button>
-          <button on="tap:AMP.setState({selectedSlide: 2})" class="px0">
-            <amp-img [class]="selectedSlide &#x3D;&#x3D; 2 ? &#39;land-see-progress-indicator land-see-selected-slide&#39; : &#39;land-see-progress-indicator&#39;" class="land-see-progress-indicator" alt="Go to slide 3" width="7" height="7" layout="fixed" src="img/structure/carousel-progress-indicator.svg">
-            </amp-img>
-          </button>
-        </div>
-      </div>
-      <div class="land-see-hero-right absolute">
-        <amp-carousel id="land-see-hero-right" class="land-see-hero-carousel mx-auto" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Skykomish River Valley " width="1290" height="680" layout="responsive" src="img/content/pineapple-bedroom.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="stories.amp.html?category&#x3D;design#land-see-design">Design</a>
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Nature's Inspiration</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br>sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla.
-              </p>
-              <a class="land-see-hero-button text-decoration-none relative" href="kim-myeong.amp.html">Read More</a>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="img/content/pineapple-desk-and-chair.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <h1 class="land-see-hero-title ampstart-title-md">Bedroom</h1>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-bottom" alt="Bedroom" width="1290" height="680" layout="responsive" src="img/content/pineapple-living-room.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 sm-hide md-hide lg-hide" href="stories.amp.html?category&#x3D;fashion#land-see-fashion">Fashion</a>
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Bedroom</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Relatively new to the industry, footwear Bedroom uses a unique<br>mix of color, texture, and material to make her shoes the must-haves of this year.
-              </p>
-              <a class="land-see-hero-button text-decoration-none relative" href="kim-myeong.amp.html">Read More</a>
             </div>
           </div>
         </amp-carousel>
