@@ -1,0 +1,12 @@
+/* Create two equal columns that floats next to each other */
+div.column {
+    float: left;
+    width: 210px;
+    padding: 10px;
+}
+/* Clear floats after the columns */
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
