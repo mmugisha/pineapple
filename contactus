@@ -2,7 +2,7 @@
 <html ⚡="">
 <head>
   <meta charset="utf-8">
-  <title>The Pineapple Courtyard 2 | Home</title>
+  <title>The Pineapple Courtyard 2</title>
   <link rel="canonical" href="https://www.ampstart.com/templates/land-see.amp">
   <meta name="viewport" content="width=device-width">
   <meta name="amp-google-client-id-api" content="googleanalytics">
@@ -30,6 +30,23 @@
 </style>
 </head>
   <body class="land-see">
+    <amp-animation id="recentAccentAnimation" layout="nodisplay">
+      <script type="application/json">
+        {
+          "duration": "1s",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-recent-accent-image",
+              "keyframes": [
+                { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
+              ]
+            }
+          ]
+        }
+      </script>
+    </amp-animation>
     <amp-animation id="recentSlideIn" layout="nodisplay">
       <script type="application/json">
         {
@@ -49,7 +66,26 @@
         }
       </script>
     </amp-animation>
-    <amp-animation id="recentAccentAnimation" layout="nodisplay">
+    <amp-animation id="accordionSlideIn" layout="nodisplay">
+      <script type="application/json">
+        {
+          "duration": ".4s",
+          "easing": "ease-in",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-arts-culture-anim",
+              "delay": "calc(100ms * index())",
+              "keyframes": [
+                {"transform": "translateY(0)", "opacity": 1}
+              ]
+            }
+          ]
+        }
+      </script>
+    </amp-animation>
+    <amp-animation id="subscribeBGParallax" layout="nodisplay">
       <script type="application/json">
         {
           "duration": "1s",
@@ -57,7 +93,7 @@
           "direction": "alternate",
           "animations": [
             {
-              "selector": ".land-see-recent-accent-image",
+              "selector": ".land-see-subscribe-bg",
               "keyframes": [
                 { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
               ]
@@ -77,8 +113,9 @@
       </a>
     <nav class="ampstart-headerbar-nav ampstart-nav  xs-hide sm-hide">
       <ul class="list-reset center m0 p0 flex justify-center nowrap">
-        <li class="ampstart-nav-item "><a href="aboutus.html" class="text-decoration-none block">About</a></li>
-        <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Contact</a></li>
+          <li class="px1"><a class="text-decoration-none ampstart-label" href="#">Pricing</a></li>
+          <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">About</a></li>
+          <li class="ampstart-nav-item "><a href="#" class="text-decoration-none block">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -89,8 +126,9 @@
   </div>
   <nav class="ampstart-sidebar-nav ampstart-nav">
     <ul class="list-reset m0 p0 ampstart-label">
-      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="aboutus.html">About</a></li>
-      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">Contact</a></li>
+          <li class="px1"><a class="text-decoration-none ampstart-label" href="#">Pricing</a></li>
+          <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">About</a></li>
+          <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="#">Contact</a></li>
     </ul>
   </nav>
 <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
@@ -193,7 +231,7 @@
       </div>
     </section>
     <section class="land-see-recent-content relative mx-auto py4">
-      <h4 class="land-see-section-header ml1">What We offers (<span class="night-cost">Cost : $20 / night</span>)</h4>
+      <h4 class="land-see-section-header ml1">What We offers</h4>
       <div class="clearfix pt2">
         <amp-position-observer on="enter:recentSlideIn.start" layout="nodisplay">
         </amp-position-observer>
@@ -287,7 +325,8 @@
   </ul>
     <nav class="ampstart-footer-nav">
       <ul class="list-reset flex flex-wrap mb3">
-        <li class="px1"><a class="text-decoration-none ampstart-label" href="aboutus.html">About</a></li>
+        <li class="px1"><a class="text-decoration-none ampstart-label" href="#">Pricing</a></li>
+        <li class="px1"><a class="text-decoration-none ampstart-label" href="#">About</a></li>
         <li class="px1"><a class="text-decoration-none ampstart-label" href="#">Contact</a></li>
       </ul>
     </nav>
