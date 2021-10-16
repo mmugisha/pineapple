@@ -2,7 +2,7 @@
 <html ⚡="">
 <head>
   <meta charset="utf-8">
-  <title>The Pineapple Courtyard 2 | Home</title>
+  <title>The Pineapple Courtyard 2 | Contact Us</title>
   <link rel="canonical" href="https://www.ampstart.com/templates/land-see.amp">
   <meta name="viewport" content="width=device-width">
   <meta name="amp-google-client-id-api" content="googleanalytics">
@@ -22,7 +22,7 @@
   <script custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js" async=""></script>
   <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js" async=""></script>
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text:400,600" rel="stylesheet">
-  <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <link rel="icon" href="favicon.ico">
   <style amp-custom>
     @import url('css/page.min.css');
@@ -30,7 +30,7 @@
 </style>
 </head>
   <body class="land-see">
-    <amp-animation id="recentSlideIn" layout="nodisplay">
+    <amp-animation id="aboutusSlideIn" layout="nodisplay">
       <script type="application/json">
         {
           "duration": ".4s",
@@ -39,27 +39,10 @@
           "direction": "alternate",
           "animations": [
             {
-              "selector": ".land-see-recent",
+              "selector": ".land-see-arts-culture-anim",
               "delay": "calc(100ms * index())",
               "keyframes": [
                 {"transform": "translateY(0)", "opacity": 1}
-              ]
-            }
-          ]
-        }
-      </script>
-    </amp-animation>
-    <amp-animation id="recentAccentAnimation" layout="nodisplay">
-      <script type="application/json">
-        {
-          "duration": "1s",
-          "fill": "both",
-          "direction": "alternate",
-          "animations": [
-            {
-              "selector": ".land-see-recent-accent-image",
-              "keyframes": [
-                { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
               ]
             }
           ]
@@ -112,158 +95,17 @@
 </ul>
 </amp-sidebar>
 <!-- End Sidebar -->
-  <!-- End Navbar -->
-    <section class="land-see-hero-container mx-auto mb3 relative overflow-hidden">
-      <div class="land-see-hero-main mx-auto">
-        <amp-carousel id="land-see-hero-main" class="land-see-hero-carousel mx-auto" media="(min-width: 40.06rem)" width="1290" height="680" layout="responsive" [slide]="selectedSlide" on="slideChange:AMP.setState({selectedSlide: event.index})" noloading="" controls="" loop="" type="slides">
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-bottom" alt="Bedroom" width="1290" height="680" layout="responsive" src="img/content/pineapple-living-room.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <h1 class="land-see-hero-title ampstart-title-md mb3"><a class="text-decoration-none" href="#">Living room</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Self contained living room with TV, seats and all facilities required for the living room.
-              </p>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Skykomish River Valley " width="1290" height="680" layout="responsive" src="img/content/pineapple-kitchen.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href=""> Kitchen</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Kitchen with fridge, table-top cooker and gas and other cooking equipment.
-              </p>
-            </div>
-          </div>
-          <div class="land-see-hero-content mx-auto relative">
-            <amp-img class="cover land-see-hero-image land-see-cover-position-top" alt="Bold Coast Cottage" width="1290" height="680" layout="responsive" src="img/content/pineapple-bed.jpeg">
-            </amp-img>
-            <div class="land-see-hero-typography mx-auto center z2 absolute">
-              <h1 class="land-see-hero-title ampstart-title-md"><a class="text-decoration-none" href="kim-myeong.amp.html">Bedroom</a></h1>
-              <p class="land-see-hero-caption ampstart-caption mx-auto max-width-3 pt1 mb3">
-                Well organised bedroom with all facilities required for the Bedroom.
-              </p>
-            </div>
-          </div>
-        </amp-carousel>
-      </div>
-    </section>
     <section class="land-see-recent-content mx-auto py2">
-      <h4 class="land-see-section-header ml1 mb2">Inside The Pineapple Courtyard 2</h4>
-      <div class="row">
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-lush-green-and-grassy-3.jpeg" alt="Lush,green and grassy" title="Lush,green and grassy" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img lightbox="moreImages" src="img/content/pineapple-toilet.jpeg" alt="Toilet" title="Toilet" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-bedroom.jpeg" alt="Bedroom" title="Bedroom" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-bathroom.jpeg" alt="Bathroom" title="Bathroom" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-desk-and-chair.jpeg" alt="Desk and chair" title="Desk and chair" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-emtrance.jpeg" alt="Entrance" title="Entrance" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-kitchen.jpeg" alt="Kitchen" title="Kitchen" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img  lightbox="moreImages" src="img/content/pineapple-table-top-cooker.jpeg" alt="Table top cooker" title="Table top cooker" layout="fixed" width="200" height="150"></amp-img>
-        </div>
-        <div class="column">
-          <amp-img lightbox="moreImages" src="img/content/pineapple-watching-room.jpeg" layout="fixed" width="200" height="150"></amp-img>
-          <div hidden>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-lush-green-and-grassy-3.jpeg" layout="responsive" width="400" height="710"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-toilet.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-bedroom.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-bathroom.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-desk-and-chair.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-emtrance.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-kitchen.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-watching-room.jpeg" width="400" height="300" layout="responsive"></amp-img>
-            <amp-img lightbox="moreImages" src="img/content/pineapple-table-top-cooker.jpeg" width="400" height="300" layout="responsive"></amp-img>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="land-see-recent-content relative mx-auto py4">
-      <h4 class="land-see-section-header ml1">What We offers (<span class="night-cost">Cost : $20 / night</span>)</h4>
-      <div class="clearfix pt2">
-        <amp-position-observer on="enter:recentSlideIn.start" layout="nodisplay">
-        </amp-position-observer>
-        <ul class="list-reset m0 p0 center justify-center fit">
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Scenic views</h4>
-            <p class="ampstart-caption pt1 pb3">Courtyard view, Garden view, Valley view</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Bathroom</h4>
-            <p class="ampstart-caption pt1 pb3">Cleaning products, Hot water</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Bedroom and laundry</h4>
-            <p class="ampstart-caption pt1 pb3">Essentials (Towels, bed sheets, soap, and toilet paper), Hangers, Bed linens, Extra pillows and blankets, Room-darkening shades, Iron, Drying rack for clothing, Clothing storage: wardrobe</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Entertainment</h4>
-            <p class="ampstart-caption pt1 pb3">TV with standard cable.</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Family</h4>
-            <p class="ampstart-caption pt1 pb3">Window guards</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Internet and office</h4>
-            <p class="ampstart-caption pt1 pb3">Wifi (Available throughout the listing),Dedicated workspace: office chair and desk, Pocket wifi.</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Kitchen and dining</h4>
-            <p class="ampstart-caption pt1 pb3">Space where guests can cook their own meals, Refrigerator, Cooking basics(Pots and pans, oil, salt and pepper), Dishes and silverware(Bowls, chopsticks, plates, cups, etc.), Mini fridge, Freezer, Stove, Hot water kettle.</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Location features</h4>
-            <p class="ampstart-caption pt1 pb3">Private entrance (Separate street or building entrance)</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Outdoor</h4>
-            <p class="ampstart-caption pt1 pb3">Private patio or balcony, Private backyard – Fully fenced (An open space on the property usually covered in grass).</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Parking and facilities</h4>
-            <p class="ampstart-caption pt1 pb3">Free parking on premises</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <h4 class="land-see-post-title ampstart-title-sm pt1">Services</h4>
-            <p class="ampstart-caption pt1 pb3">Luggage dropoff allowed(For guests' convenience when they have early arrival or late departure), Long term stays allowed (Allow stay for 28 days or more).</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="land-see-recent-content relative mx-auto py4">
-      <h4 class="land-see-section-header ml1">Recent Stories</h4>
-      <div class="clearfix pt2">
-        <amp-position-observer on="enter:recentSlideIn.start" layout="nodisplay">
-        </amp-position-observer>
-        <ul class="list-reset m0 p0 center justify-center fit">
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <amp-img  on="tap:lightbox1" role="button" tabindex="0" src="img/content/pineapple-upcoming-flowers.jpeg" alt="upcoming-flowers" title="upcoming-flowers" layout="fixed" width="400" height="350"></amp-img>
-            <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
-            <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">Upcoming-flowers</a></h4>
-            <p class="ampstart-caption pt1 pb3">We are planning to plant flowers that are blooming blossoming; flowering; flourishing; thriving in vigor, health and beauty.</p>
-          </li>
-          <li class="px1 mt1 block align-top land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent">
-            <amp-img  on="tap:lightbox1" role="button" tabindex="0" src="img/content/pineapple-eating-utensiles.jpeg" alt="eating-utensiles" title="eating-utensiles" layout="fixed" width="400" height="350"></amp-img>
-            <amp-image-lightbox id="lightbox1" layout="nodisplay"></amp-image-lightbox>
-            <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="kim-myeong.amp.html">Eating utensils</a></h4>
-            <p class="ampstart-caption pt1 pb3">New eating utensils that handles everything required on the eating (Breakfast, Lunch , Dinner and Others).</p>
-          </li>
-        </ul>
+      <div class="items-center max-width-4 mx-auto m0 mb3 z1">
+        <h4 class="mb2 mt4 bold">Kampala, Central Region, Uganda</h4> 
+        <p class="about-para">The neighbourhood is quiet and you have a view of the area the apartment is located in.It is a culturally infused environment, perfect for those who are looking for a Ugandan living experience.</p>
+        <h4 class="mb2 mt2 bold">Getting around</h4>
+        <p class="about-para">The space is a 5minute walk from the main road, where you can access public transport.</p>
+        <p class="about-para">You have an option of requesting an Uber, or requesting for private cab services that we can help organise for you.</p>
+        <h4 class="mb2 mt4 bold">Google map location</h4> 
+        <amp-iframe width="500" height="281" title="Netflix House of Cards branding: The Stack" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" allowfullscreen frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.736416497787!2d32.52274551465375!3d0.36712499973215473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da54611c51153%3A0x34cfa824af86dd67!2sYawe%20Road%2C%20Nansana!5e0!3m2!1sen!2sug!4v1634402438870!5m2!1sen!2sug">
+          <amp-img layout="fill" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.736416497787!2d32.52274551465375!3d0.36712499973215473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da54611c51153%3A0x34cfa824af86dd67!2sYawe%20Road%2C%20Nansana!5e0!3m2!1sen!2sug!4v1634402438870!5m2!1sen!2sug" placeholder></amp-img>
+        </amp-iframe>  
       </div>
     </section>
   <!-- Start Footer -->
