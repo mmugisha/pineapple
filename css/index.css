@@ -10,3 +10,9 @@ div.row:after {
     display: table;
     clear: both;
 }
+.about-para{
+    margin-top: 30px;
+}
+.night-cost{
+    color: red;
+}
